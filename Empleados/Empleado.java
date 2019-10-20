@@ -18,4 +18,17 @@ public class Empleado{
 	public String toString(){
 		return "Empleado:\n\tNombre: "this.apellido + " " + this.nombre + "\n\tSeg. Social: " + this.numSeguridad;
 	}
+
+	//getters
+	public String getName(){
+		return this.nombre;
+	}
+
+	public String getApellido(){
+		return this.apellido;
+	}
+
+	public Strring getNumSeguridad(){
+		return this.numSeguridad;
+	}
 }
