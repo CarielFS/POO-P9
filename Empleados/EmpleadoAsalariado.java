@@ -23,7 +23,6 @@ public class EmpleadoAsalariado extends Empleado{
 		return nombre;
 	}
 
-
 	//Accessor for salarioSemanal
 	public String getSalarioSemanal(){
 		return salarioSemanal;
@@ -33,12 +32,10 @@ public class EmpleadoAsalariado extends Empleado{
 	public abstract float ingresos(float salarioSemanal){
 		this.salarioSemanal = salarioSemanal;
 		return salarioSemanal;
-
-		//Data method
-		public String toString(){
-			return "Empleado asalariado [ " +getNombre() + " " + getApellido() + ". SegSocial: " + getNumSeguridad() + ". Sueldo: " + ingresos() + "]";
-		}
-
 	}
 
+	//Data method
+	public String toString(){
+		return super.toString() + "\n\tSalario Semanal: $" + this.getSalarioSemanal();
+	}
 }
