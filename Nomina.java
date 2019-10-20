@@ -37,13 +37,13 @@ public class Nomina{
                 EmpleadoBaseMasComision empleadoActual = (EmpleadoBaseMasComision)empleados[i];
 
                 double salarioBaseAnterior = empleadoActual.getSalarioBase();
-                salida += "\nsalario base anterior: $" + salarioBaseAnterior;
+                salida += "\n\tSalario base anterior: $" + salarioBaseAnterior;
 
                 empleadoActual.setSalarioBase(1.10 * salarioBaseAnterior);
-                salida += "\nel nuevo salario base con aumento del 10% es: $" + empleadoActual.getSalarioBase();
+                salida += "\n\tEl nuevo salario base con aumento del 10% es: $" + empleadoActual.getSalarioBase();
             }
 
-            salida += "\ngano $" + empleados[i].ingresos() + "\n";
+            salida += "\n\tGano: $" + empleados[i].ingresos() + "\n";
         }
 
         //obtener nombre del tipo de cada objeto en el arreglo empleados
