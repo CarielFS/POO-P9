@@ -5,7 +5,7 @@ public class Empleado{
 	private String numSeguridad;
 
 	//Constructor
-	public Empleado(String nombre, String apellido, numSeguridad){
+	public Empleado(String nombre, String apellido,String numSeguridad){
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.numSeguridad = numSeguridad;
@@ -16,7 +16,7 @@ public class Empleado{
 
 	//Metodo toString
 	public String toString(){
-		return "Empleado:\n\tNombre: "this.apellido + " " + this.nombre + "\n\tSeg. Social: " + this.numSeguridad;
+		return "Empleado:\n\tNombre: "+this.apellido + " " + this.nombre + "\n\tSeg. Social: " + this.numSeguridad;
 	}
 
 	//getters
