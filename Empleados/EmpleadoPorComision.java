@@ -15,6 +15,6 @@ public class EmpleadoPorComision extends Empleado{
 
 	@Override
 	public String toString(){
-		return super.toString();
+		return super.toString() + "\n\tVentas totales: $" + ventasTotales + "\n\tTasa de comsión: " + tasaComision;
 	}
 }
