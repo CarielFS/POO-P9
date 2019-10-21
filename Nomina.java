@@ -39,7 +39,7 @@ public class Nomina{
                 double salarioBaseAnterior = empleadoActual.getSalarioBase();
                 salida += "\n\tSalario base anterior: $" + salarioBaseAnterior;
 
-                empleadoActual.setSalarioBase(1.10 * salarioBaseAnterior);
+                empleadoActual.setSalarioBase((float)(1.10 * salarioBaseAnterior));
                 salida += "\n\tEl nuevo salario base con aumento del 10% es: $" + empleadoActual.getSalarioBase();
             }
 
