@@ -1,4 +1,4 @@
-public class Empleado{
+public abstract class Empleado{
 	//Atributos privados
 	private String nombre;
 	private String apellido;
@@ -12,7 +12,7 @@ public class Empleado{
 	}
 
 	//Metodo de ingresos que implementaran las clases hijas
-	public abstract float ingresos(){}
+	public abstract float ingresos();
 
 	//Metodo toString
 	public String toString(){
