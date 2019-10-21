@@ -27,6 +27,6 @@ public class EmpleadoPorHoras extends Empleado{
     }
     @Override
     public String toString(){
-        return super.toString() +"Ingresos: "+ingresos();
+        return super.toString() +", Horas: "+getHoras()+", Ingresos: "+ingresos();
     }
 }
