@@ -4,7 +4,7 @@ public class EmpleadoAsalariado extends Empleado{
 
 	//constructor method
 	public EmpleadoAsalariado(String nombre, String apellido, String numSeguridad, float salarioSemanal){
-		super.Empleado(String nombre, String apellido, String numSeguridad);
+		super(nombre, apellido, numSeguridad);
 		this.salarioSemanal = salarioSemanal;
 	}
 
@@ -29,13 +29,14 @@ public class EmpleadoAsalariado extends Empleado{
 	}
 
 	//Accessor for ingresos
-	public abstract float ingresos(float salarioSemanal){
-		this.salarioSemanal = salarioSemanal;
-		return salarioSemanal;
-	}
+	@Override
+  public float ingresos(){
+    return salarioSemanal;
+  }
 
 	//Data method
+	@Override
 	public String toString(){
-		return super.toString() + "\n\tSalario Semanal: $" + this.getSalarioSemanal();
+		return super.toString() + "\n\tSalario semanal: $" + salarioSemanal + "\n\t";
 	}
 }
