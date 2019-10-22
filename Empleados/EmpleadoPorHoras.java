@@ -1,3 +1,5 @@
+package Empleados;
+
 public class EmpleadoPorHoras extends Empleado{
     private float sueldo;int horas;
     public EmpleadoPorHoras(String nombre,String apellido,String numSeguridad,float sueldo,int horas){

@@ -1,3 +1,5 @@
+package Empleados;
+
 public class EmpleadoAsalariado extends Empleado{
 	//private fields
 	private float salarioSemanal;
@@ -8,30 +10,15 @@ public class EmpleadoAsalariado extends Empleado{
 		this.salarioSemanal = salarioSemanal;
 	}
 
-	//Accessor for nombre
-	public String getNombre(){
-		return nombre;
-	}
-
-	//Accessor for apellido
-	public String getApellido(){
-		return nombre;
-	}
-
-	//Accessor for numSeguridad
-	public String getNumSeguridad(){
-		return nombre;
-	}
-
 	//Accessor for salarioSemanal
 	public String getSalarioSemanal(){
-		return salarioSemanal;
+		return ""+salarioSemanal;
 	}
 
 	//Accessor for ingresos
 	@Override
   public float ingresos(){
-    return salarioSemanal;
+    return this.salarioSemanal;
   }
 
 	//Data method

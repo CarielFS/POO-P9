@@ -1,3 +1,5 @@
+package Empleados;
+
 public abstract class Empleado{
 	//Atributos privados
 	private String nombre;
@@ -28,7 +30,7 @@ public abstract class Empleado{
 		return this.apellido;
 	}
 
-	public Strring getNumSeguridad(){
+	public String getNumSeguridad(){
 		return this.numSeguridad;
 	}
 }

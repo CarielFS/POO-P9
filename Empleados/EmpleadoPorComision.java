@@ -1,3 +1,5 @@
+package Empleados;
+
 public class EmpleadoPorComision extends Empleado{
 	private int ventasTotales;
 	private float tasaComision;

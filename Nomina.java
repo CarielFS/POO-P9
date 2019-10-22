@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.nomina;
-
 /**
  *
  * @author asus
  */
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
+import Empleados.*;
 
 public class Nomina{
     public static void main(String[] args){
@@ -24,7 +23,7 @@ public class Nomina{
         empleados[1] = new EmpleadoPorComision("Jose", "Pintor", "222-22-2222", 10002, (float) 0.06);
         empleados[2] = new EmpleadoBaseMasComision("Alfonso", "Romero", "333-33-3333", 300, (float) 0.04, 5000);
         empleados[3] = new EmpleadoPorHoras("Juan", "Perez", "444-44-4444", (float) 16.75, 40);
-        
+
         String salida = "";
 
         // Procesar genéricamente cada elemento en el arreglo empleados

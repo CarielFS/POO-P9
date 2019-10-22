@@ -1,3 +1,5 @@
+package Empleados;
+
 public class EmpleadoBaseMasComision extends EmpleadoPorComision{
 	//Atributos privados
 	private float salarioBase;
